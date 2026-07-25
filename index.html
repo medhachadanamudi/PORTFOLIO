@@ -1,6 +1,3 @@
-
-
-Medha c portfolio · HTML
 <!DOCTYPE html> 
 <html lang="en">
 <head> 
@@ -55,7 +52,7 @@ Medha c portfolio · HTML
     margin-bottom:18px;
   }
   .eyebrow::before{ content:"●"; color:var(--teal); font-size:10px; }
- 
+
   /* ---------- NAV ---------- */
   nav{
     position:sticky; top:0; z-index:50;
@@ -71,7 +68,7 @@ Medha c portfolio · HTML
   .navlinks a:hover{ color:var(--lav-deep); }
   .navlinks{ list-style:none; padding:0; margin:0; }
   @media (max-width:760px){ .navlinks{ display:none; } }
- 
+
   /* ---------- HERO ---------- */
   .hero{ padding-top:64px; padding-bottom:40px; }
   .hero-grid{ display:grid; grid-template-columns: 1.05fr 0.95fr; gap:56px; align-items:center; }
@@ -90,7 +87,7 @@ Medha c portfolio · HTML
   .btn-primary{ background:var(--ink); color:#fff; box-shadow:0 8px 20px rgba(55,42,85,.25);}
   .btn-ghost{ background:#fff; color:var(--ink); border:2px solid var(--line); }
   .btn-ghost:hover{ border-color:var(--lav-deep); }
- 
+
   .avatar-stage{ position:relative; display:flex; justify-content:center; align-items:center; }
   .avatar-blob{
     position:absolute; width:420px; height:420px; border-radius:50%;
@@ -107,7 +104,7 @@ Medha c portfolio · HTML
   .sticker.s2{ bottom:10%; right:-8%; color:var(--gold); }
   .sticker.s3{ top:48%; right:-14%; color:var(--lav-deep); }
   @media (max-width:520px){ .sticker{ display:none; } }
- 
+
   /* ---------- TERMINAL ---------- */
   .terminal{
     background: var(--ink); border-radius:18px; padding:22px 26px; color:#EAE3FA;
@@ -124,12 +121,12 @@ Medha c portfolio · HTML
   .terminal .out{ color:#C9B6F0; }
   #typed-out::after{ content:"▍"; animation:blink 1s step-start infinite; color:#F4B740; }
   @keyframes blink{ 50%{ opacity:0; } }
- 
+
   /* ---------- SECTION HEADERS ---------- */
   .sec-head{ margin-bottom:42px; max-width:640px; }
   .sec-head h2{ font-size:clamp(26px,3.4vw,36px); margin:0 0 10px; font-weight:700; }
   .sec-head p{ color:var(--ink-soft); font-size:16px; margin:0; }
- 
+
   /* ---------- ABOUT ---------- */
   .about-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:40px; }
   @media (max-width:800px){ .about-grid{ grid-template-columns:1fr; } }
@@ -137,14 +134,14 @@ Medha c portfolio · HTML
   .quirk-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:16px; }
   .quirk-list li{ display:flex; gap:14px; align-items:flex-start; font-size:15.5px; }
   .quirk-list .ico{ font-size:22px; flex:0 0 auto; }
- 
+
   /* ---------- STATS STRIP ---------- */
   .stats{ display:grid; grid-template-columns: repeat(4,1fr); gap:20px; margin-top:50px; }
   @media (max-width:760px){ .stats{ grid-template-columns:repeat(2,1fr);} }
   .stat{ background:var(--bg-card); border:1px solid var(--line); border-radius:18px; padding:22px 18px; text-align:center; }
   .stat b{ display:block; font-family:'Baloo 2'; font-size:30px; color:var(--lav-deep); }
   .stat span{ font-size:13px; color:var(--ink-soft); font-weight:600; }
- 
+
   /* ---------- SKILLS ---------- */
   .skill-groups{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
   @media (max-width:1080px){ .skill-groups{ grid-template-columns:repeat(2,1fr); } }
@@ -161,7 +158,7 @@ Medha c portfolio · HTML
   .skill-card:nth-child(2) .chip{ background:#E4F9F3; }
   .skill-card:nth-child(3) .chip{ background:#FFF3DC; }
   .skill-card:nth-child(4) .chip{ background:#FCE7F0; }
- 
+
   /* ---------- EXPERIENCE ---------- */
   .timeline{ position:relative; padding-left:32px; }
   .timeline::before{ content:""; position:absolute; left:6px; top:6px; bottom:6px; width:2px; background:var(--line); }
@@ -174,16 +171,16 @@ Medha c portfolio · HTML
   .tl-head .when{ font-family:'JetBrains Mono'; font-size:12.5px; color:var(--ink-soft); background:#EFE7FC; padding:4px 10px; border-radius:100px;}
   .tl-item ul{ margin:10px 0 0; padding-left:20px; color:var(--ink-soft); font-size:15px; }
   .tl-item li{ margin-bottom:6px; }
- 
+
   /* ---------- PROJECTS ---------- */
-  .proj-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .proj-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:22px; }
   @media (max-width:900px){ .proj-grid{ grid-template-columns:1fr; } }
   .proj-card{ background:var(--bg-card); border:1px solid var(--line); border-radius:var(--radius); padding:26px; box-shadow:var(--shadow); display:flex; flex-direction:column; height:100%; }
   .proj-card h3{ font-size:18px; margin:0 0 6px; }
   .proj-tag{ font-family:'JetBrains Mono'; font-size:11.5px; color:var(--teal); margin-bottom:12px; }
   .proj-card p{ font-size:14.5px; color:var(--ink-soft); flex-grow:1; }
   .proj-link{ margin-top:14px; font-size:13.5px; font-weight:700; color:var(--lav-deep); text-decoration:none; }
- 
+
   /* ---------- CERTS ---------- */
   .cert-row{ display:flex; gap:18px; flex-wrap:wrap; }
   .cert-badge{
@@ -193,7 +190,7 @@ Medha c portfolio · HTML
   .cert-badge .medal{ font-size:30px; }
   .cert-badge b{ display:block; font-size:14.5px; }
   .cert-badge span{ font-size:12.5px; color:var(--ink-soft); }
- 
+
   /* ---------- BOOKSHELF ---------- */
   .shelf-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
   @media (max-width:900px){ .shelf-grid{ grid-template-columns:repeat(2,1fr);} }
@@ -205,7 +202,7 @@ Medha c portfolio · HTML
   .book-genre li{ font-size:13.5px; color:var(--ink-soft); }
   .book-genre li b{ color:var(--ink); display:block; font-size:14px; }
   .book-note{ margin-top:36px; text-align:center; font-size:14.5px; color:var(--ink-soft); }
- 
+
   /* ---------- FOOTER ---------- */
   footer{ background:var(--ink); color:#EAE3FA; padding:60px 0 30px; }
   .foot-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:30px; margin-bottom:36px; }
@@ -217,7 +214,7 @@ Medha c portfolio · HTML
 </style>
 </head>
 <body>
- 
+
 <nav>
   <div class="nav-inner">
     <div class="brand">Medha <span>C.</span></div>
@@ -231,7 +228,7 @@ Medha c portfolio · HTML
     </ul>
   </div>
 </nav>
- 
+
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="wrap">
@@ -245,23 +242,23 @@ Medha c portfolio · HTML
           <a href="#projects" class="btn btn-ghost">See the receipts</a>
         </div>
       </div>
- 
+
       <div class="avatar-stage">
         <div class="avatar-blob"></div>
         <div class="sticker s1">✓ PL-300</div>
         <div class="sticker s2">☂ rain-proof</div>
         <div class="sticker s3">{ insight: true }</div>
- 
+
         <svg class="avatar-svg" viewBox="0 0 420 460" xmlns="http://www.w3.org/2000/svg">
           <!-- shadow -->
           <ellipse cx="210" cy="440" rx="140" ry="14" fill="#9C82E0" opacity="0.25"/>
- 
+
           <!-- hair back -->
           <path d="M100 190 Q90 90 210 70 Q330 90 320 190 Q330 260 300 300 L280 240 Q210 210 140 240 L120 300 Q90 260 100 190 Z" fill="#2E2438"/>
- 
+
           <!-- neck -->
           <rect x="188" y="205" width="44" height="46" rx="14" fill="#FFCC4D"/>
- 
+
           <!-- suit body -->
           <path d="M112 460 L128 320 Q150 288 210 288 Q270 288 292 320 L308 460 Z" fill="#7A5FC4"/>
           <!-- blazer lapels -->
@@ -269,7 +266,7 @@ Medha c portfolio · HTML
           <path d="M250 300 L210 340 L224 460 L280 460 L292 320 Z" fill="#6A4FB0"/>
           <!-- teal blouse -->
           <path d="M188 296 L210 345 L232 296 L222 288 Q210 300 198 288 Z" fill="#2FBFA4"/>
- 
+
           <!-- certificate scroll -->
           <g transform="translate(268,330) rotate(18)">
             <rect x="-14" y="-58" width="28" height="90" rx="10" fill="#FCFAFF" stroke="#E1D6F7" stroke-width="3"/>
@@ -280,46 +277,46 @@ Medha c portfolio · HTML
             <circle cx="0" cy="18" r="9" fill="#F4B740"/>
             <path d="M-5 24 L-9 40 L0 34 L9 40 L5 24" fill="#E39B1F"/>
           </g>
- 
+
           <!-- right arm holding scroll -->
           <path d="M262 320 Q296 316 298 340 Q300 360 274 358 Q250 356 250 336 Z" fill="#7A5FC4"/>
           <circle cx="286" cy="335" r="15" fill="#FFCC4D"/>
- 
+
           <!-- left arm -->
           <path d="M158 320 Q126 330 122 360 Q120 382 144 380 Q166 376 164 350 Z" fill="#7A5FC4"/>
           <circle cx="132" cy="368" r="15" fill="#FFCC4D"/>
- 
+
           <!-- face -->
           <ellipse cx="210" cy="165" rx="78" ry="82" fill="#FFCC4D"/>
- 
+
           <!-- hair front / bangs -->
           <path d="M132 150 Q120 80 210 66 Q300 80 288 150 Q286 108 210 100 Q134 108 132 150 Z" fill="#2E2438"/>
           <path d="M132 150 Q118 210 128 250 Q108 210 118 150 Z" fill="#2E2438"/>
           <path d="M288 150 Q302 210 292 250 Q312 210 302 150 Z" fill="#2E2438"/>
- 
+
           <!-- eyebrows -->
           <path d="M158 148 Q176 138 196 146" stroke="#2E2438" stroke-width="6" fill="none" stroke-linecap="round"/>
           <path d="M224 146 Q244 138 262 148" stroke="#2E2438" stroke-width="6" fill="none" stroke-linecap="round"/>
- 
+
           <!-- eyes -->
           <ellipse cx="180" cy="168" rx="10" ry="12" fill="#2E2438"/>
           <ellipse cx="242" cy="168" rx="10" ry="12" fill="#2E2438"/>
           <circle cx="183" cy="164" r="2.6" fill="#fff"/>
           <circle cx="245" cy="164" r="2.6" fill="#fff"/>
- 
+
           <!-- blush -->
           <ellipse cx="164" cy="196" rx="12" ry="7" fill="#F0846A" opacity="0.35"/>
           <ellipse cx="258" cy="196" rx="12" ry="7" fill="#F0846A" opacity="0.35"/>
- 
+
           <!-- big smile -->
           <path d="M176 200 Q210 232 246 200 Q236 220 210 220 Q184 220 176 200 Z" fill="#5A2B2B"/>
           <path d="M182 202 Q210 218 240 202 Q210 214 182 202 Z" fill="#fff"/>
- 
+
           <!-- glasses (data-girl signature) -->
           <circle cx="180" cy="168" r="24" fill="none" stroke="#372A55" stroke-width="4"/>
           <circle cx="242" cy="168" r="24" fill="none" stroke="#372A55" stroke-width="4"/>
           <line x1="204" y1="166" x2="218" y2="166" stroke="#372A55" stroke-width="4"/>
- 
+
           <!-- lightbulb idea -->
           <g transform="translate(300,60)">
             <circle cx="0" cy="0" r="16" fill="#F4B740"/>
@@ -331,7 +328,7 @@ Medha c portfolio · HTML
         </svg>
       </div>
     </div>
- 
+
     <!-- terminal easter egg -->
     <div class="terminal">
       <div class="bar"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
@@ -340,7 +337,7 @@ Medha c portfolio · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- ================= ABOUT ================= -->
 <section id="about">
   <div class="wrap">
@@ -364,7 +361,7 @@ Medha c portfolio · HTML
         </ul>
       </div>
     </div>
- 
+
     <div class="stats">
       <div class="stat"><b>7 yrs</b><span>turning chaos into charts</span></div>
       <div class="stat"><b>120+</b><span>error-free report cycles</span></div>
@@ -373,7 +370,7 @@ Medha c portfolio · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- ================= SKILLS ================= -->
 <section id="skills" style="background:var(--bg-card); box-shadow: inset 0 1px 0 var(--line), inset 0 -1px 0 var(--line);">
   <div class="wrap">
@@ -435,7 +432,7 @@ Medha c portfolio · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience">
   <div class="wrap">
@@ -492,7 +489,7 @@ Medha c portfolio · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- ================= PROJECTS ================= -->
 <section id="projects" style="background:var(--bg-card); box-shadow: inset 0 1px 0 var(--line), inset 0 -1px 0 var(--line);">
   <div class="wrap">
@@ -520,10 +517,16 @@ Medha c portfolio · HTML
         <p>Binary classifier on 97,640 clinical records flagging low-pulse-rate risk. 87% recall on the minority class — 19 points above baseline — turning reactive monitoring into a heads-up.</p>
         <a class="proj-link" href="https://github.com/medhachadanamudi/PULSERATE" target="_blank">View on GitHub →</a>
       </div>
+      <div class="proj-card">
+        <h3>Sales Performance Dashboard</h3>
+        <div class="proj-tag">Power BI · DAX · Star Schema · 3-Page Report</div>
+        <p>Executive sales report across three pages — Sales Overview, Customer Details, Product Details — with top-product/customer rankings, trend lines, geo mapping, pivot tables, and a custom KPI card that recolors by performance range.</p>
+        <a class="proj-link" href="Sales_Report.pbix" download>Download .pbix — open in Power BI Desktop →</a>
+      </div>
     </div>
   </div>
 </section>
- 
+
 <!-- ================= EDUCATION + CERTS + LEADERSHIP ================= -->
 <section id="education">
   <div class="wrap">
@@ -545,20 +548,20 @@ Medha c portfolio · HTML
       </div>
       <p style="color:var(--ink-soft); font-size:14.5px; margin:6px 0 0;">Sri Padmavati Mahila Visvavidyalayam, India</p>
     </div>
- 
+
     <div class="cert-row">
       <div class="cert-badge"><div class="medal">🥇</div><div><b>PL-300</b><span>Microsoft Power BI Data Analyst</span></div></div>
       <div class="cert-badge"><div class="medal">☁️</div><div><b>AZ-900</b><span>Microsoft Azure Fundamentals</span></div></div>
       <div class="cert-badge"><div class="medal">🧩</div><div><b>Data Analytics Toolkit</b><span>IIIT Bangalore</span></div></div>
     </div>
- 
+
     <div class="card" style="margin-top:30px;">
       <h3 style="margin-top:0;">Technical Lead — Women Empowerment Technology Initiative</h3>
       <p style="color:var(--ink-soft); font-size:15px; margin-bottom:0;">Led a 4-person team building a product website and data tracking system for tribal women entrepreneurs in 3 months — tracking 100+ participant records that became the university's first measurable evidence of the programme's impact.</p>
     </div>
   </div>
 </section>
- 
+
 <!-- ================= BOOKSHELF ================= -->
 <section id="bookshelf" style="background:var(--bg-card); box-shadow: inset 0 1px 0 var(--line), inset 0 -1px 0 var(--line);">
   <div class="wrap">
@@ -643,7 +646,7 @@ Medha c portfolio · HTML
     <p class="book-note">And every so often I fall for a subject purely because of how the author teaches it — these two aren't even in my field, and I still can't put them down.</p>
   </div>
 </section>
- 
+
 <!-- ================= CONTACT / FOOTER ================= -->
 <footer id="contact">
   <div class="wrap">
@@ -655,14 +658,14 @@ Medha c portfolio · HTML
       <div class="foot-links">
         <a href="mailto:medha.analytics.ch@gmail.com">✉️ medha.analytics.ch@gmail.com</a>
         <a href="tel:4198906099">📞 419-890-6099</a>
-        <a href="https://linkedin.com/in/medha-c" target="_blank">LinkedIn</a>
-        <a href="https://github.com/medhachadanamudi" target="_blank">GitHub</a>
+    
+  <a href="https://github.com/medhachadanamudi" target="_blank">GitHub</a>
       </div>
     </div>
     <div class="foot-bottom">Kansas City, MO · Open to Remote · Built with a lavender palette and an unreasonable amount of coffee ☕</div>
   </div>
 </footer>
- 
+
 <script>
   const lines = [
     "> insight found: your Q3 numbers are lying to you. gently.",
@@ -685,7 +688,3 @@ Medha c portfolio · HTML
 </script>
 </body>
 </html>
- 
-
-
-
